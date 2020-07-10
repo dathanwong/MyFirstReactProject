@@ -16,19 +16,19 @@ class PersonCard extends React.Component{
 
     render(){
         return (
-            <div class="container justify-content-center">
-                <div class="row">
+            <div className="container justify-content-center">
+                <div className="row">
                     <h1>{this.props.lastName}, {this.props.firstName}</h1>
                 </div>
-                <div class="row">
+                <div className="row">
                     Age: {this.state.age}
                 </div>
-                <div class="row">
+                <div className="row">
                     Hair Color: {this.props.hairColor}
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <button onClick={this.addBirthday} class="btn btn-secondary">Birthday Button for {this.props.firstName} {this.props.lastName}</button>
+                <div className="row">
+                    <div className="col">
+                        <button onClick={this.addBirthday} className="btn btn-secondary">Birthday Button for {this.props.firstName} {this.props.lastName}</button>
                     </div>
                 </div>
                 {this.props.children}
